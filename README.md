@@ -6,7 +6,7 @@ This is a simple _Hello, World!_ directory that will help you get you up and run
 
 This project inludes [`ngrok`](https://ngrok.com/) for port tunnelling:
 ````
-`./node_modules/ngrok/bin/ngrok http 3000`
+./node_modules/ngrok/bin/ngrok http 3000
 ````
 
 Also contains a [session-based](https://www.jovo.tech/framework/docs/data#session-attributes) state-stack architecture for routing between asynchronous user requests.
