@@ -9,7 +9,7 @@ This project inludes [`ngrok`](https://ngrok.com/) for port tunnelling:
 `./node_modules/ngrok/bin/ngrok http 3000`
 ````
 
-And includes a [session-based](https://www.jovo.tech/framework/docs/data#session-attributes) state-stack architecture for routing between asynchronous user requests.
+Also contains a [session-based](https://www.jovo.tech/framework/docs/data#session-attributes) state-stack architecture for routing between asynchronous user requests.
 
 ## Thanks to
 [Sheraz Sarwar](https://github.com/sheraz-sarwar) for his epic node.js refactoring.
