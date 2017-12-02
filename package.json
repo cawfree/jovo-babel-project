@@ -33,7 +33,6 @@
     "type": "git",
     "url": "git+https://github.com/Cawfree/jovo-babel-project.git"
   },
-  "author": "Zonal Marketing Technologies",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/Cawfree/jovo-babel-project/issues"
