@@ -1,0 +1,54 @@
+{
+  "name": "iorder-alexa",
+  "version": "0.0.1",
+  "description": "An example application written using Jovo that communicates with the iOrder API.",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "dialogflow": "^0.1.0",
+    "jovo-framework": "^0.6.20"
+  },
+  "devDependencies": {
+    "babel-cli": "~6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-preset-env": "~1.6.1",
+    "eslint": "^4.12.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "ngrok": "~2.2.23",
+    "nodemon": "~1.12.1"
+  },
+  "scripts": {
+    "build": "babel --source-maps --ignore ./webhook.js --out-dir dist app",
+    "lint": "node_modules/.bin/eslint ./ --format=table",
+    "watch": "npm run build -- --watch",
+    "start": "nodemon --ignore dist --exec 'npm run build; node ./webhook.js'",
+    "tunnel": "ngrok http 3000",
+    "zip": "npm run zip-alexa && npm run zip-google",
+    "zip-alexa": "npm run build && zip -rq alexa-skill.zip dist node_modules index.js package.json",
+    "zip-google": "npm run build && zip -rq google-action.zip dist index.js package.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cawfree/iorder-alexa.git"
+  },
+  "author": "Zonal Marketing Technologies",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Cawfree/iorder-alexa/issues"
+  },
+  "homepage": "https://github.com/Cawfree/iorder-alexa#readme",
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "6.10"
+          }
+        }
+      ]
+    ]
+  }
+}
