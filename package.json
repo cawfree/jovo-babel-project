@@ -1,7 +1,7 @@
 {
   "name": "iorder-alexa",
   "version": "0.0.1",
-  "description": "An example application written using Jovo that communicates with the iOrder API.",
+  "description": "An example application written using Jovo.",
   "main": "index.js",
   "dependencies": {
     "axios": "^0.17.1",
@@ -31,14 +31,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cawfree/iorder-alexa.git"
+    "url": "git+https://github.com/Cawfree/jovo-babel-project.git"
   },
   "author": "Zonal Marketing Technologies",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Cawfree/iorder-alexa/issues"
+    "url": "https://github.com/Cawfree/jovo-babel-project/issues"
   },
-  "homepage": "https://github.com/Cawfree/iorder-alexa#readme",
+  "homepage": "https://github.com/Cawfree/jovo-babel-project#readme",
   "babel": {
     "presets": [
       [
